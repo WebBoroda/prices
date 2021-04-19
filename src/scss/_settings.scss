@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-size: 10px;
 }
 
 *,
@@ -10,8 +11,10 @@ html {
 
 body {
   margin: 0;
-  font-family: "asd", sans-serif;
+  font-size: 1.6rem;
+  font-family: 'Nunito', sans-serif;
   background-color: var(--color-white);
+  color: var(--color-text-main);
 }
 
 img {
@@ -20,6 +23,7 @@ img {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul {
@@ -34,6 +38,13 @@ ul {
 
 .site-container {
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
 }
 
 .is-hidden {
@@ -60,7 +71,7 @@ ul {
 
 .container {
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 10px;
   max-width: 1200px;
 }
 

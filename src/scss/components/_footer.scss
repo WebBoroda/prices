@@ -1,0 +1,27 @@
+.footer {
+  width: 100%;
+  height: 41rem;
+  background-color: var(--color-footer);
+}
+
+.footer__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.footer__img--top {
+  fill: var(--color-footer);
+  position: absolute;
+  height: 56px;
+  max-width: 100%;
+  top: -40px;
+  left: -130px;
+}
+
+.footer__img--bottom {
+  position: absolute;
+  max-width: 100%;
+  right: -70px;
+  bottom: 0;
+}

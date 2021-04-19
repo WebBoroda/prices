@@ -1,0 +1,47 @@
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 55px;
+}
+
+.stats__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.stats__cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 20rem;
+  padding: 2rem;
+  margin: 0;
+
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  text-align: center;
+  color: var(--color-title);
+}
+
+.cart__img {
+  padding: 0;
+  height: 100px;
+  width: auto;
+  margin-bottom: 15px;
+}
+
+.cart__text {
+  padding: 0;
+  margin: 0;
+}
+
+.curt__number {
+  color: var(--color-text-accent);
+}
