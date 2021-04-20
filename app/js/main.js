@@ -15,6 +15,8 @@ const defaultSelect = () => {
 
 defaultSelect();
 
+// calc form price
+
 
 
 //# sourceMappingURL=main.js.map

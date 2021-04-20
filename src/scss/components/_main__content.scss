@@ -15,7 +15,7 @@
 }
 
 .prices {
-  flex-basis: 731px;
+  flex: auto;
 }
 
 .title {
@@ -68,6 +68,7 @@
   flex-direction: column;
   width: 52rem;
   padding-left: 2rem;
+  margin-bottom: 23px;
 }
 
 //currency
@@ -173,8 +174,13 @@
 .form__input:focus {
   outline: none;
   border: 1px solid var(--color-input-border);
+}
+
+
+.is-open .choices__inner {
   border-radius: 2rem 2rem 0 0;
 }
+
 
 
 .is-focused .choices__inner {
@@ -193,4 +199,138 @@
 
 .choices[data-type*='select-one'] .choices__inner {
   padding-bottom: 6px;
+}
+
+.choices[data-type*='select-one']:after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  border-top: 2px solid var(--color-text-accent);
+  border-right: 2px solid var(--color-text-accent);
+  transform: rotate(135deg);
+  position: absolute;
+  right: 14.5px;
+  top: 38%;
+  margin-top: -2.5px;
+  pointer-events: none;
+}
+
+//   calc services prices
+
+.servisec {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  padding: 10px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+  margin-right: 50px;
+}
+
+.servisec .services__types--popular,
+.services__types--other {
+  display: flex;
+
+}
+
+.services__vertical {
+  display: flex;
+  border-radius: 10px;
+  background-color: var(--color-popular);
+  color: var(--color-text-popular);
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.services__vertical--text {
+  writing-mode: tb-rl;
+  transform: rotate(180deg);
+  text-align: center;
+}
+
+
+.services__vertical--other {
+  background-color: var(--color-other);
+  color: var(--color-text-other);
+
+}
+
+.vertical-text {
+  transform: rotate(270deg);
+}
+
+
+
+.servises__table {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.table__title,
+.table-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+.table__title {
+  color: var(--color-black);
+  font-weight: 700;
+}
+
+.table-row:nth-of-type(even) {
+  background-color: var(--color-table-bg);
+}
+
+.table__title--heading {}
+
+.table__title-cell {
+  padding: 20px 15px;
+}
+
+.tabl-row__group {
+  font-weight: 700;
+  padding: 20px;
+  transition: color 0.2s ease;
+
+  label {
+    cursor: pointer;
+    z-index: 2;
+  }
+}
+
+.table-row__text {
+  flex-basis: 280px;
+}
+
+
+.tabl-row__input {
+  opacity: 0;
+  position: absolute;
+}
+
+
+.tabl-row__input:checked~label {
+  color: var(--color-text-popular);
+  position: relative;
+  transition: all 0.3s ease;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-color: var(--color-popular);
+    top: 0;
+    left: 0;
+
+    padding: 2.8rem 4.4rem;
+    border-radius: 1rem;
+    transform: translate(-2rem, -1.8rem);
+    z-index: -1;
+    transition: all 0.3s ease;
+  }
 }

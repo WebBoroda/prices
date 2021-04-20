@@ -15,4 +15,6 @@ const defaultSelect = () => {
 
 defaultSelect();
 
+// calc form price
+
 
