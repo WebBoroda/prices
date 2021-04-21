@@ -29,6 +29,21 @@ defaultSelect();
 
 // calc form price
 
+function toggle(which,group){
+  let counter=1;
+  let checkbox = document.getElementById(group + counter);
+
+  while(checkbox){
+    if (counter == which) {
+
+      }else{
+        checkbox.checked=false;
+      }
+        counter++;
+        checkbox=document.getElementById(group+counter);
+      }
+}
+
 
 
 //# sourceMappingURL=main.js.map
