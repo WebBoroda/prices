@@ -17,7 +17,9 @@
   --color-input-bg: #fafafa;
   --color-table-bg: #f8f9f9;
   --color-header-bg: #fffcf7;
-  --color-shadow: rgba(0, 0, 0, 0.1); }
+  --color-btn-bg: rgb(254, 167, 58);
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  --color-shadow-btn: rgba(254, 167, 58, .5); }
 
 html {
   box-sizing: border-box;

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!-- ru  	en  uk
+<!-- ru  	en  uk zxx
 http://htmlbook.ru/html/value/lang
 -->
-<html lang="en">
+<html lang="zxx">
 
 <head>
   <meta charset="UTF-8">
@@ -25,6 +25,7 @@ http://htmlbook.ru/html/value/lang
     @include('partials/header.html')
     <main class="main">
       <article class="content">
+        <h2 class="is-hidden">price</h2>
         <section class="prices">
           <h2 class="title">prices</h2>
           <p class="prices__description">
@@ -80,7 +81,7 @@ http://htmlbook.ru/html/value/lang
             </div>
             <!-- services -->
             <div class="form__select">
-              <p class="form__text" for="cv">Type of service</p>
+              <p class="form__text">Type of service</p>
               <input class="form__input" id="cv" type="text" placeholder="Resume/CV service">
             </div>
 
@@ -94,186 +95,202 @@ http://htmlbook.ru/html/value/lang
           </form>
 
           <!-- services calc prices-->
-          <form class="servisec">
-            <div class="services__types--popular">
-              <div class="services__vertical">
-                <p class="services__vertical--text">
-                  Most popular
-                </p>
+          <form class="services">
+            <div class="services__wrap">
+              <div class="services__types--popular">
+                <div class="services__vertical">
+                  <p class="services__vertical--text">
+                    Most popular
+                  </p>
+                </div>
+
+                <div class="servises__table">
+                  <div class="table__title">
+                    <p class="table__title--heading">
+                      Services
+                    </p>
+                    <div class="table__number">
+                      <span class="table__title-cell">
+                        5 days
+                      </span>
+                      <span class="table__title-cell">
+                        3 days
+                      </span>
+                      <span class="table__title-cell">
+                        48 hourse
+                      </span>
+                      <span class="table__title-cell">
+                        24 hourse
+                      </span>
+                    </div>
+
+                  </div>
+                  <div class="table-row">
+                    <p class="table-row__text">
+                      Resume writing
+                    </p>
+                    <div class="table__number">
+                      <div class="high-wrap"></div>
+                      <span class="tabl-row__group">
+                        <input class="tabl-row__input" type="radio" name="res-writ" id="res-writ-1" checked />
+                        <label for="res-writ-1">$125.5</label>
+                      </span>
+                      <span class="tabl-row__group">
+                        <input class="tabl-row__input" type="radio" name="res-writ" id="res-writ-2" />
+                        <label for="res-writ-2">$125.5</label>
+                      </span>
+                      <span class="tabl-row__group">
+                        <input class="tabl-row__input" type="radio" name="res-writ" id="res-writ-3" />
+                        <label for="res-writ-3">$125.5</label>
+                      </span>
+                      <span class="tabl-row__group">
+                        <input class="tabl-row__input" type="radio" name="res-writ" id="res-writ-4" />
+                        <label for="res-writ-4">$125.5</label>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="table-row">
+                    <p class="table-row__text">
+                      Resume editing
+                    </p>
+                    <div class="table__number">
+                      <span class="tabl-row__group">
+                        <input class="tabl-row__input" type="radio" name="res-edit" id="res-edit-1" checked />
+                        <label for="res-edit-1">$125.5</label>
+                      </span>
+                      <span class="tabl-row__group">
+                        <input class="tabl-row__input" type="radio" name="res-edit" id="res-edit-2" />
+                        <label for="res-edit-2">$125.5</label>
+                      </span>
+                      <span class="tabl-row__group">
+                        <input class="tabl-row__input" type="radio" name="res-edit" id="res-edit-3" />
+                        <label for="res-edit-3">$125.5</label>
+                      </span>
+                      <span class="tabl-row__group">
+                        <input class="tabl-row__input" type="radio" name="res-edit" id="res-edit-4" />
+                        <label for="res-edit-4">$125.5</label>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="table-row">
+                    <p class="table-row__text">
+                      CV editing
+                    </p>
+                    <div class="table__number">
+                      <span class="tabl-row__group">
+                        <input class="tabl-row__input" type="radio" name="cv-edit" id="cv-edit-1" />
+                        <label for="cv-edit-1">$125.5</label>
+                      </span>
+                      <span class="tabl-row__group">
+                        <input class="tabl-row__input" type="radio" name="cv-edit" id="cv-edit-2" checked />
+                        <label for="cv-edit-2">$125.5</label>
+                      </span>
+                      <span class="tabl-row__group">
+                        <input class="tabl-row__input" type="radio" name="cv-edit" id="cv-edit-3" />
+                        <label for="cv-edit-3">$125.5</label>
+                      </span>
+                      <span class="tabl-row__group">
+                        <input class="tabl-row__input" type="radio" name="cv-edit" id="cv-edit-4" />
+                        <label for="cv-edit-4">$125.5</label>
+                      </span>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <div class="services__types--other">
+                <div class="services__vertical services__vertical--other ">
+                  <p class="services__vertical--text other">
+                    Other
+                  </p>
+                </div>
 
-              <div class="servises__table">
-                <div class="table__title">
-                  <p class="table__title--heading">
-                    Services
-                  </p>
-                  <div class="table__number">
-                    <span class="table__title-cell">
-                      5 days
-                    </span>
-                    <span class="table__title-cell">
-                      3 days
-                    </span>
-                    <span class="table__title-cell">
-                      48 hourse
-                    </span>
-                    <span class="table__title-cell">
-                      24 hourse
-                    </span>
+                <div class="servises__table">
+                  <div class="table-row">
+                    <p class="tableletter table-row__text">
+                      New! E-Cover Letter Writing
+                    </p>
+                    <div class="table__number">
+                      <span class="tabl-row__group">
+                        <input class="tabl-row__input" type="radio" name="leter-writ" id="leter-writ-1" checked />
+                        <label for="leter-writ-1">$125.5</label>
+                      </span>
+                      <span class="tabl-row__group">
+                        <input class="tabl-row__input" type="radio" name="leter-writ" id="leter-writ-2" />
+                        <label for="leter-writ-2">$125.5</label>
+                      </span>
+                      <span class="tabl-row__group">
+                        <input class="tabl-row__input" type="radio" name="leter-writ" id="leter-writ-3" />
+                        <label for="leter-writ-3">$125.5</label>
+                      </span>
+                      <span class="tabl-row__group">
+                        <input class="tabl-row__input" type="radio" name="leter-writ" id="leter-writ-4" />
+                        <label for="leter-writ-4">$125.5</label>
+                      </span>
+                    </div>
                   </div>
-
-                </div>
-                <div class="table-row">
-                  <p class="table-row__text">
-                    Resume writing
-                  </p>
-                  <div class="table__number">
-                    <div class="high-wrap"></div>
-                    <span class="tabl-row__group">
-                      <input class="tabl-row__input" type="radio" name="res-writ" id="res-writ-1" checked />
-                      <label for="res-writ-1">$125.5</label>
-                    </span>
-                    <span class="tabl-row__group">
-                      <input class="tabl-row__input" type="radio" name="res-writ" id="res-writ-2" />
-                      <label for="res-writ-2">$125.5</label>
-                    </span>
-                    <span class="tabl-row__group">
-                      <input class="tabl-row__input" type="radio" name="res-writ" id="res-writ-3" />
-                      <label for="res-writ-3">$125.5</label>
-                    </span>
-                    <span class="tabl-row__group">
-                      <input class="tabl-row__input" type="radio" name="res-writ" id="res-writ-4" />
-                      <label for="res-writ-4">$125.5</label>
-                    </span>
+                  <div class="table-row">
+                    <p class="table-row__text">
+                      Resume Package: Resume + Cover letter writing
+                    </p>
+                    <div class="table__number">
+                      <span class="tabl-row__group">
+                        <input class="tabl-row__input" type="radio" name="resum-pac" id="resum-pac-1" checked />
+                        <label for="resum-pac-1">$125.5</label>
+                      </span>
+                      <span class="tabl-row__group">
+                        <input class="tabl-row__input" type="radio" name="resum-pac" id="resum-pac-2" />
+                        <label for="resum-pac-2">$125.5</label>
+                      </span>
+                      <span class="tabl-row__group">
+                        <input class="tabl-row__input" type="radio" name="resum-pact" id="resum-pac-3" />
+                        <label for="resum-pac-3">$125.5</label>
+                      </span>
+                      <span class="tabl-row__group">
+                        <input class="tabl-row__input" type="radio" name="resum-pac" id="resum-pac-4" />
+                        <label for="resum-pac-4">$125.5</label>
+                      </span>
+                    </div>
                   </div>
-                </div>
-                <div class="table-row">
-                  <p class="table-row__text">
-                    Resume editing
-                  </p>
-                  <div class="table__number">
-                    <span class="tabl-row__group">
-                      <input class="tabl-row__input" type="radio" name="res-edit" id="res-edit-1" checked />
-                      <label for="res-edit-1">$125.5</label>
-                    </span>
-                    <span class="tabl-row__group">
-                      <input class="tabl-row__input" type="radio" name="res-edit" id="res-edit-2" />
-                      <label for="res-edit-2">$125.5</label>
-                    </span>
-                    <span class="tabl-row__group">
-                      <input class="tabl-row__input" type="radio" name="res-edit" id="res-edit-3" />
-                      <label for="res-edit-3">$125.5</label>
-                    </span>
-                    <span class="tabl-row__group">
-                      <input class="tabl-row__input" type="radio" name="res-edit" id="res-edit-4" />
-                      <label for="res-edit-4">$125.5</label>
-                    </span>
-                  </div>
-                </div>
-                <div class="table-row">
-                  <p class="table-row__text">
-                    CV editing
-                  </p>
-                  <div class="table__number">
-                    <span class="tabl-row__group">
-                      <input class="tabl-row__input" type="radio" name="cv-edit" id="cv-edit-1" />
-                      <label for="cv-edit-1">$125.5</label>
-                    </span>
-                    <span class="tabl-row__group">
-                      <input class="tabl-row__input" type="radio" name="cv-edit" id="cv-edit-2" checked />
-                      <label for="cv-edit-2">$125.5</label>
-                    </span>
-                    <span class="tabl-row__group">
-                      <input class="tabl-row__input" type="radio" name="cv-edit" id="cv-edit-3" />
-                      <label for="cv-edit-3">$125.5</label>
-                    </span>
-                    <span class="tabl-row__group">
-                      <input class="tabl-row__input" type="radio" name="cv-edit" id="cv-edit-4" />
-                      <label for="cv-edit-4">$125.5</label>
-                    </span>
+                  <div class="table-row">
+                    <p class="table-row__text">
+                      CV Package: CV + cover letter writing
+                    </p>
+                    <div class="table__number">
+                      <span class="tabl-row__group">
+                        <input class="tabl-row__input" type="radio" name="cv-pac" id="cv-pac-1" />
+                        <label for="cv-pac-1">$125.5</label>
+                      </span>
+                      <span class="tabl-row__group">
+                        <input class="tabl-row__input" type="radio" name="cv-pac" id="cv-pac-2" checked />
+                        <label for="cv-pac-2">$125.5</label>
+                      </span>
+                      <span class="tabl-row__group">
+                        <input class="tabl-row__input" type="radio" name="cv-pac" id="cv-pac-3" />
+                        <label for="cv-pac-3">$125.5</label>
+                      </span>
+                      <span class="tabl-row__group">
+                        <input class="tabl-row__input" type="radio" name="cv-pac" id="cv-pac-4" />
+                        <label for="cv-pac-4">$125.5</label>
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="services__types--other">
-              <div class="services__vertical services__vertical--other ">
-                <p class="services__vertical--text other">
-                  Other
+            <div class="total-container">
+              <div class="total-price">
+                <p class="total-price__title">
+                  Total price:
+                </p>
+                <p class="tatal-price__number">
+                  $129.90
                 </p>
               </div>
-
-              <div class="servises__table">
-                <div class="table-row">
-                  <p class="tableletter table-row__text">
-                    New! E-Cover Letter Writing
-                  </p>
-                  <div class="table__number">
-                    <span class="tabl-row__group">
-                      <input class="tabl-row__input" type="radio" name="leter-writ" id="leter-writ-1" checked />
-                      <label for="leter-writ-1">$125.5</label>
-                    </span>
-                    <span class="tabl-row__group">
-                      <input class="tabl-row__input" type="radio" name="leter-writ" id="leter-writ-2" />
-                      <label for="leter-writ-2">$125.5</label>
-                    </span>
-                    <span class="tabl-row__group">
-                      <input class="tabl-row__input" type="radio" name="leter-writ" id="leter-writ-3" />
-                      <label for="leter-writ-3">$125.5</label>
-                    </span>
-                    <span class="tabl-row__group">
-                      <input class="tabl-row__input" type="radio" name="leter-writ" id="leter-writ-4" />
-                      <label for="leter-writ-4">$125.5</label>
-                    </span>
-                  </div>
-                </div>
-                <div class="table-row">
-                  <p class="table-row__text">
-                    Resume Package: Resume + Cover letter writing
-                  </p>
-                  <div class="table__number">
-                    <span class="tabl-row__group">
-                      <input class="tabl-row__input" type="radio" name="resum-pac" id="resum-pac-1" checked />
-                      <label for="resum-pac-1">$125.5</label>
-                    </span>
-                    <span class="tabl-row__group">
-                      <input class="tabl-row__input" type="radio" name="resum-pac" id="resum-pac-2" />
-                      <label for="resum-pac-2">$125.5</label>
-                    </span>
-                    <span class="tabl-row__group">
-                      <input class="tabl-row__input" type="radio" name="resum-pac" id="resum-pact-3" />
-                      <label for="resum-pac-3">$125.5</label>
-                    </span>
-                    <span class="tabl-row__group">
-                      <input class="tabl-row__input" type="radio" name="resum-pac" id="resum-pac-4" />
-                      <label for="resum-pac-4">$125.5</label>
-                    </span>
-                  </div>
-                </div>
-                <div class="table-row">
-                  <p class="table-row__text">
-                    CV Package: CV + cover letter writing
-                  </p>
-                  <div class="table__number">
-                    <span class="tabl-row__group">
-                      <input class="tabl-row__input" type="radio" name="cv-pac" id="cv-pac-1" />
-                      <label for="cv-pac-1">$125.5</label>
-                    </span>
-                    <span class="tabl-row__group">
-                      <input class="tabl-row__input" type="radio" name="cv-pac" id="cv-pac-2" checked />
-                      <label for="cv-pac-2">$125.5</label>
-                    </span>
-                    <span class="tabl-row__group">
-                      <input class="tabl-row__input" type="radio" name="cv-pac" id="cv-pac-3" />
-                      <label for="cv-pac-3">$125.5</label>
-                    </span>
-                    <span class="tabl-row__group">
-                      <input class="tabl-row__input" type="radio" name="cv-pac" id="cv-pac-4" />
-                      <label for="cv-pac-4">$125.5</label>
-                    </span>
-                  </div>
-                </div>
-              </div>
+              <button class="services__btn btn-reset">
+                proceed to order
+              </button>
             </div>
+
           </form>
         </section>
         <aside class="features">
