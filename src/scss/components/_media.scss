@@ -1,15 +1,24 @@
 @media (min-width: 1040px) {}
 
 @media (max-width: 1040px) {
-
   .content {
     flex-direction: column;
     align-items: center;
   }
 
+  .stats__content {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 768px) {
+
+  .prices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
 
   .breadcrumbs {
     margin-bottom: 2rem;
@@ -23,15 +32,81 @@
     flex-direction: column;
   }
 
-  .stats__content {
+  .form__prices {
+    margin: 0;
+    margin-right: 0;
+    padding: 0;
+    width: 30rem;
+    font-size: 1.2rem;
+  }
+
+  .form__select,
+  .choices__inner {
+    font-size: 1.2rem;
+  }
+
+  .curency__input:checked+label::before,
+  .curency__group:hover::before {
+
+    transform: translate(-1.7rem, -0.7rem);
+    padding: 1.2rem 2.8rem;
+
+  }
+
+  .curency__group:not(:last-child) {
+    margin-right: 3rem;
+  }
+
+  .form__select {
     flex-direction: column;
+  }
+
+  .curency {
+    flex-basis: 0;
+  }
+
+  .form__text {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  .form__input,
+  .choices__inner {
+    min-width: 30rem;
   }
 
   .total-container {
     flex-direction: column;
   }
 
+
   .total-price {
     margin-bottom: 2rem;
+  }
+
+
+  .stats__content {
+    flex-direction: column;
+  }
+
+  .services {
+    margin: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .media560 {
+    display: block;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: red;
+  }
+
+  .services {
+    display: none;
   }
 }
