@@ -1,0 +1,37 @@
+@media (min-width: 1040px) {}
+
+@media (max-width: 1040px) {
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .breadcrumbs {
+    margin-bottom: 2rem;
+  }
+
+  .header__cloud {
+    display: none;
+  }
+
+  .prices__img {
+    flex-direction: column;
+  }
+
+  .stats__content {
+    flex-direction: column;
+  }
+
+  .total-container {
+    flex-direction: column;
+  }
+
+  .total-price {
+    margin-bottom: 2rem;
+  }
+}

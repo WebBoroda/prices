@@ -273,6 +273,7 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  overflow: auto;
 }
 
 .table__title,
@@ -282,6 +283,7 @@
   justify-content: space-between;
   padding: 20px;
   border-radius: 10px;
+
 }
 
 
@@ -292,12 +294,14 @@
 
 .table-row:nth-of-type(even) {
   background-color: var(--color-table-bg);
+
 }
 
 
 .table__title-cell {
   padding: 20px 15px;
 }
+
 
 .tabl-row__group {
   font-weight: 700;
@@ -314,6 +318,10 @@
   flex-basis: 280px;
 }
 
+
+.table__number {
+  display: flex;
+}
 
 .tabl-row__input {
   opacity: 0;
@@ -376,8 +384,6 @@
 .focus-visible {
   outline: 0;
 }
-
-
 
 .services__btn {
   display: inline-flex;
