@@ -41,7 +41,17 @@ function toggle(which,group){
       }
         counter++;
         checkbox=document.getElementById(group+counter);
-      }
-}
+  }
+};
+
+function total() {
+	let sum = 0;
+	let checboxServices = document.getElementsByClassName('tabl-row__input');
+
+	for( let i=0; i < checboxServices.length; i++) {
+  if(checboxServices[i].checked) sum += parseFloat (checboxServices[i].value);
+  }
+	document.form2.totalInput.value = sum.toFixed(2);
+};
 
 

@@ -294,7 +294,6 @@
   background-color: var(--color-table-bg);
 }
 
-.table__title--heading {}
 
 .table__title-cell {
   padding: 20px 15px;
@@ -361,15 +360,23 @@
   padding-right: 2rem;
 }
 
-.tatal-price__number {
+.total-price__info,
+.total-price__info--input {
   font-size: 2.4rem;
   font-weight: 700;
-  padding-right: 2rem;
 }
 
-.services__btn {
-  display: inline-flex;
+.total-price__info--input {
+  color: var(--color-title);
+  padding-right: 2rem;
+  max-width: 11rem;
+  border: none;
 }
+
+.focus-visible {
+  outline: 0;
+}
+
 
 
 .services__btn {
