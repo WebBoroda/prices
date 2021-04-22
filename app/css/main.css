@@ -544,7 +544,7 @@
   .services {
     display: none; } }
 
-@media (max-height: 400px) {
+@media (max-height: 600px) {
   .header__top {
     height: 5rem; } }
 
