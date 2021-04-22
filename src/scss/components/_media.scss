@@ -110,3 +110,9 @@
     display: none;
   }
 }
+
+@media (max-height: 400px) {
+  .header__top {
+    height: 5rem;
+  }
+}
